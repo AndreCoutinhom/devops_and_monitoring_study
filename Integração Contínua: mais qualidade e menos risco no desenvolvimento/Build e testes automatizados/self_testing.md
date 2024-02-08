@@ -1,5 +1,7 @@
 # Self testing
 
+* As integrações do novo código no repositório precisam ser verificadas o tempo todo. Isso só é possível com uma bateria de testes, executadas de maneira automatizada, É isso que vai garantir a corretude do código.
+
 * Testes devem rodar antes do commit.
 
 ### Test Driven Development (TDD)
