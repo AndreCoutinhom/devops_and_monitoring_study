@@ -4,7 +4,8 @@
 
 ![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/ededfb26-b717-4851-9295-fd9834666cb8)
 
-* É importante que cada uma dessas etapas possa ser executada através de um único comando.
+* É importante que cada uma dessas etapas possa ser executada através de forma automatizada. O build deve ser simples de executar, idealmente através de um único comando (single command build).
+* Builds lentos vão afetar negativamente a integração contínua, atrasando commits e diminuindo o feedback. Otimize o build para receber feedback mais rápido.
 
 ### O que o comando faz?
 
