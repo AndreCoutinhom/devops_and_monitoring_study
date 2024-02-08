@@ -14,6 +14,10 @@
 
 * Alguns servidores oferecem o private build, que possibilita o desenvolvedor a fazer uma observação do repositório e testa-lo antes da produção, com um build mais completo.
 
+* O servidor de integração publica ou disponibiliza o artefato de build (jar, war, gem, dll, image etc). Dessa forma, os desenvolvedores sempre podem baixar a última versão.
+
+* Muitas vezes, o servidor de integração até publica um histórico sobre os últimos builds e mostra mais informações sobre o tempo do build, testes, etc.
+
 ### Com qual frequência devemos iniciar a construção do software através do servidor de integração contínua?
 
 * Idealmente a cada commit. Isso pode ser um desafio quando temos uma frequência alta de commits. Nesse caso pode ser necessário executar os builds em paralelo.
