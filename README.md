@@ -53,7 +53,7 @@ O processo levantado pela cultura DevOps regido por condutas de cibersegurança.
 
 ### Pilares:
 
-* **Segurança em primeiro lugar**;
+* Segurança em primeiro lugar;
 * Velocidade;
 * Entrega contínua;
 * Confiabilidade.
@@ -100,13 +100,56 @@ Consiste em falhar no ambiente para verificar o quanto essa falha interfere no s
 
 ## O que é Observabilidade? 🎥
 
+### Pilares
+
+* Métricas;
+* Traços Distribuídos;
+* Logs.
+
+#### Métricas
+
+[Prometheus](https://prometheus.io) e [Grafana](https://grafana.com) são algumas das principais ferramentas open-source para monitoramento de sistema de database. Permitem a observabilidade dos dados do software desenvolvido.
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/251a6210-575b-4792-9ee8-96470aaffe30)
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/a60c1215-3249-4624-ad9e-54eddb17b6f8)
+
+#### Traços distribuídos
+
+[Jaeger](https://www.jaegertracing.io) é uma ferramenta que permite a observabilidade das comunicações entre os microsserviços. Outras opções de ferramenta são Service Mesh e Proxy.
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/67f0bafe-09b7-4869-8c3a-da564197a5e9)
+
+#### Logs
+
+Log de dados é uma expressão utilizada para descrever o processo de registro de eventos relevantes num sistema computacional. Esse registro pode ser utilizado para restabelecer o estado original de um sistema ou para que um administrador conheça o seu comportamento no passado. 
+
+É geralmente programado em Java, através de Sidecar, instalação no Host ou Shell script. Pode ser vizualizado em ferramentas como [Graylog](https://graylog.org).
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/ee2a0da5-2eef-499a-b31c-4d72ed407688)
+
 ---
 
 ## Monitorando aplicações: 4 Golden Signals 🎥
 
+### O quatro sinais de ouro para monitoramento
+
+* Latência - Quanto tempo uma determinada requisição demora para ser executada?
+* Erros - O quão bem o cliente consegue utilizar o produto sem interrupções de sistema?
+* Tráfego - O quão otimizado meu produto é em relação a volume de dados?
+* Saturação - Qual o limite que meu produto consegue alcançar? O que posso fazer caso ele alcance esse limite?
+
 ---
 
-## Monitoramento com Netdata 🎥
+## Monitoramento com [Netdata](https://www.netdata.cloud) 🎥
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/993ebd4f-7b17-4b3d-ac7a-bfe20a43371e)
+
+Netdata é uma ferramenta de monitoramento open-source que pode se comunicar com outras ferramentas.
+
+Ele oferece um overview da aplicação quando instalado, apresentando métricas e gráficos sobre comportamento de rede, buffers, performance, consumo de memória, especificações de hardware e praticamente tudo em relação a monitoramento.
+
+O Netdata também possui uma configuração de alarmes. Se algo sai dos eixos da aplicação (seja por latência, erro, tráfego ou saturação), isso é comunicado pelo Netdata e até pode ser compartilhado em plataformas empresariais como o [Slack](https://slack.com/intl/pt-br).
 
 ---
 
@@ -116,12 +159,49 @@ Consiste em falhar no ambiente para verificar o quanto essa falha interfere no s
 
 ## O que são Containers? 🎥
 
+Os containers são uma forma de gerenciar processamento computacional entre diferentes contextos funcionais. Em outras palavras, são unidades executáveis de software em que o código do aplicativo é empacotado com suas respectivas bibliotecas e dependências, usando métodos comuns para executá-los em qualquer lugar, seja em um computador desktop, na estrutura de TI tradicional ou na cloud.
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/8349bd71-543c-42db-a981-da63927f68ff)
+
+Os containers eliminam a necessidade de cada aplicação possuir um novo sistema operacional, algo que não é alcançável com sistemas distribuídos e máquinas virtuais.
+
+São mais leves, menos custosos em manutenção (um único SO) e mais rápidos para provisionar.
+
 ---
 
 ## O que é Serverless? 🎥
 
+Serverless é o paradigma de executar código sem se preocupar com servidores. Ao contrário do que o nome sugere, os servidores ainda existem, mas são executados por um provedor.
+
+Os principais provedores de servidor são a AWS, a Azure e a Google; todos através de computação na nuvem.
+
+### Prós
+
+* Paga pelo que usa;
+* Cada função em linguagem diferente;
+* Arquiteturas orientadas a eventos;
+* Auto-escalável.
+
+### Contras
+
+* Duração de execução;
+* Vendor Lock-In (configurações e funcionamento presos aos serviços do provedor);
+* Difícil de debugar;
+* Ambiente de execução de difícil controle.
+
+### Componentes (AWS)
+
+* Lambda;
+* API Gateway;
+* SQS;
+* DynamoDB;
+* SNS;
+* S3.
+
 ---
 
 ## O que é Infraestrutura como Código (IaC)? 🎥
+
+Infraestrutura como código é um processo de gerenciamento de infraestrutura de TI que aplica as práticas recomendadas do desenvolvimento de software DevOps ao gerenciamento de recursos de infraestrutura de nuvem. Através de métodos como virtualização e automação, é possível desenvolver um sistema mais ágil, menos custoso e muito mais fácil de monitorar.
 
 ---
