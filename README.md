@@ -82,6 +82,16 @@ Assim como no exemplo abaixo, a auditoria com processos de segurança precisam s
 
 ## SRE - Engenharia de Confiabilidade de Sites 🎥
 
+Criada pela Google para identificar níveis de confiabilidade em desenvolvimento e infraestruturas. O SRE leva as equipes de desenvolvimento às práticas de observabilidade utilizando métricas e atribuição de dados para comparação de versões. Utilizando o SRE é possível reduzir o tempo de resposta a um incidente.
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/bfbac934-8a0f-49bf-8f3f-dfa72d135ee0)
+
+![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/3024a6bf-aa24-4398-af47-24a7fd794b0d)
+
+### Chaos engineering 
+
+Consiste em falhar no ambiente para verificar o quanto essa falha interfere no sistema, dessa forma avaliar sua resiliência.
+
 ---
 
 ## [SRE: Site Reliability Engineering – Hipsters #187](https://cursos.alura.com.br/extra/hipsterstech/sre-site-reliability-engineering-hipsters-187-a374) 🎧
