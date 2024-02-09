@@ -1,6 +1,7 @@
 # Etapas do pipeline
 
 * As etapas são testes do nosso sistema, começando com testes simples e rápidos, até chegar aos testes mais sofisticado.
+* Para cada commit novo devemos construir e testar o software.
 
 ![image](https://github.com/AndreCoutinhom/devops_and_monitoring_study/assets/91290799/2c518c56-807c-4e1d-a956-60cedeb2fe94)
 
