@@ -12,6 +12,6 @@
 
 Unit Test --> Aceitação Automatizada --> Homologação --> Produção
 
-* O importante é que os testes rápidos fique à esquerda, e que cada ambiente à direita se aproxime do ambiente de produção.
+* O importante é que os testes rápidos fiquem à esquerda, e que cada ambiente à direita se aproxime do ambiente de produção.
 
 ---
